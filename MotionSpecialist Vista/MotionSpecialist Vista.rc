@@ -1,0 +1,865 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "添加(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "记录(&R)"
+    BEGIN
+        MENUITEM "&First Record",               ID_RECORD_FIRST
+        MENUITEM "&Previous Record",            ID_RECORD_PREV
+        MENUITEM "&Next Record",                ID_RECORD_NEXT
+        MENUITEM "&Last Record",                ID_RECORD_LAST
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于(&A) MotionSpecialist Vista...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于MotionSpecialist Vista"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_ICON2,IDC_STATIC,12,11,20,20
+    LTEXT           "MotionSpecialist Vista Version 7.0",IDC_STATIC,48,10,
+                    119,8,SS_NOPREFIX
+    CTEXT           "Copyright (C) 2007",IDC_STATIC,51,25,102,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MOTIONSPECIALISTVISTA_FORM DIALOGEX 0, 0, 674, 440
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT15,579,341,56,12,ES_LOWERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTON5,588,27,69,15
+    EDITTEXT        IDC_EDIT2,144,82,91,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT20,240,82,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT36,314,82,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,381,82,135,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO3,561,81,31,41,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT5,68,98,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,124,98,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,180,98,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT28,299,98,338,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,68,115,71,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,198,115,176,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,435,115,41,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT19,526,115,131,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,54,131,353,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,455,131,97,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,54,148,353,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,472,148,53,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT18,54,165,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT34,137,165,42,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT17,279,165,96,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT32,425,165,90,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT24,567,165,89,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT21,57,181,139,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT26,263,181,108,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO4,423,180,48,41,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,539,180,48,41,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT31,57,197,279,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT29,57,213,473,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT37,57,229,473,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "保存",IDC_BUTTON4,586,214,71,15
+    EDITTEXT        IDC_EDIT16,341,30,35,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_BUTTON3,386,19,58,15
+    COMBOBOX        IDC_COMBO2,56,270,48,167,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "搜索",IDC_BUTTON51,266,267,52,15
+    EDITTEXT        IDC_EDIT30,56,287,170,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "搜索",IDC_BUTTON42,266,286,52,15
+    COMBOBOX        IDC_COMBO1,348,268,169,165,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "上传",IDC_BUTTON26,348,286,45,15
+    EDITTEXT        IDC_EDIT35,574,195,18,15,ES_CENTER | ES_LOWERCASE | 
+                    ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT1,61,82,39,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "浏览",IDC_BUTTON1,539,405,61,15
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,314,524,119
+    RTEXT           "注册号：",IDC_STATIC,22,83,33,8
+    RTEXT           "单位：",IDC_STATIC,16,134,31,8
+    RTEXT           "姓名：",IDC_STATIC,107,83,32,8
+    RTEXT           "性别：",IDC_STATIC,524,83,32,8
+    RTEXT           "科室：",IDC_STATIC,414,134,36,8
+    RTEXT           "大会职务：",IDC_STATIC,18,100,45,8
+    RTEXT           "职称：",IDC_STATIC,273,83,33,8
+    RTEXT           "参会方式：",IDC_STATIC,16,117,47,8
+    RTEXT           "地址：",IDC_STATIC,16,150,32,8
+    RTEXT           "自费类型：",IDC_STATIC,379,117,51,8
+    RTEXT           "邮政编码：",IDC_STATIC,414,150,52,8
+    GROUPBOX        "详细信息",IDC_STATIC,7,67,660,183,0,WS_EX_DLGMODALFRAME
+    RTEXT           "赞助厂家：",IDC_STATIC,145,117,47,8
+    DEFPUSHBUTTON   "查询",IDC_BUTTON2,566,359,80,15
+    RTEXT           "固定电话：（办公室）",IDC_STATIC,184,167,89,8
+    RTEXT           "手机：",IDC_STATIC,12,167,36,8
+    RTEXT           "城市：",IDC_STATIC,483,117,38,8
+    CONTROL         132,IDC_STATIC,"Static",SS_BITMAP,10,8,269,52,
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "按序号查询",IDC_STATIC,287,7,168,54,0,
+                    WS_EX_DLGMODALFRAME
+    RTEXT           "注册号：",IDC_STATIC,295,31,40,8
+    GROUPBOX        "添加新记录",IDC_STATIC,546,7,121,54,0,
+                    WS_EX_DLGMODALFRAME
+    CTEXT           "姓名音序缩写",IDC_STATIC,579,327,58,8
+    GROUPBOX        "",IDC_STATIC,537,315,130,67,0,WS_EX_DLGMODALFRAME
+    RTEXT           "E-Mail：",IDC_STATIC,16,183,35,8
+    PUSHBUTTON      "清空",IDC_BUTTON7,386,38,58,15
+    PUSHBUTTON      "关于",IDC_BUTTON8,605,405,61,15
+    RTEXT           "传真：",IDC_STATIC,524,167,37,8
+    PUSHBUTTON      "删除",IDC_BUTTON22,472,19,58,15
+    PUSHBUTTON      "打印信封",IDC_BUTTON23,472,38,58,15
+    EDITTEXT        IDC_EDIT27,586,271,32,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "人",IDC_STATIC,623,273,15,8
+    PUSHBUTTON      "导出列表",IDC_BUTTON35,605,387,61,15
+    PUSHBUTTON      "导出信封",IDC_BUTTON38,461,286,55,15
+    GROUPBOX        "统计",IDC_STATIC,537,255,130,55,0,WS_EX_DLGMODALFRAME
+    GROUPBOX        "",IDC_STATIC,462,7,77,54,0,WS_EX_DLGMODALFRAME
+    RTEXT           "专业特长：",IDC_STATIC,238,100,56,8
+    PUSHBUTTON      "获取地址",IDC_BUTTON44,560,139,70,15
+    PUSHBUTTON      "清空列表",IDC_BUTTON46,539,387,61,15
+    RTEXT           "按单位：",IDC_STATIC,15,289,36,8
+    GROUPBOX        "条件搜索",IDC_STATIC,7,255,323,53,0,WS_EX_DLGMODALFRAME
+    RTEXT           "按地区：",IDC_STATIC,15,272,36,8
+    LTEXT           "省/自治区/直辖市/特别行政区",IDC_STATIC,110,272,117,8
+    CONTROL         144,IDC_STATIC,"Static",SS_BITMAP,549,331,24,22,
+                    WS_EX_CLIENTEDGE
+    CONTROL         143,IDC_STATIC,"Static",SS_BITMAP,556,20,26,23,
+                    WS_EX_CLIENTEDGE
+    CONTROL         138,IDC_STATIC,"Static",SS_BITMAP,557,215,21,23,
+                    WS_EX_CLIENTEDGE
+    CONTROL         145,IDC_STATIC,"Static",SS_BITMAP | SS_RIGHTJUST,562,266,
+                    19,17,WS_EX_CLIENTEDGE
+    RTEXT           "备注1：",IDC_STATIC,15,198,36,8
+    RTEXT           "（住宅）",IDC_STATIC,381,167,38,8
+    RTEXT           "备注2：",IDC_STATIC,15,215,36,8
+    PUSHBUTTON      ">",IDC_BUTTON6,341,197,14,13
+    PUSHBUTTON      ">",IDC_BUTTON11,535,212,14,13
+    EDITTEXT        IDC_EDIT33,633,180,24,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      ">",IDC_BUTTON13,644,98,14,13
+    PUSHBUTTON      "高级查询",IDC_BUTTON52,562,288,80,15
+    PUSHBUTTON      "▲",IDC_BUTTON53,639,139,18,15
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",0x0,540,
+                    425,125,8
+    CONTROL         "Progress1",IDC_PROGRESS2,"msctls_progress32",0x0,585,
+                    233,71,8
+    GROUPBOX        "赞助商",IDC_STATIC,337,255,195,53,0,WS_EX_DLGMODALFRAME
+    RTEXT           "备注3：",IDC_STATIC,15,231,36,8
+    PUSHBUTTON      ">",IDC_BUTTON16,535,228,14,13
+    EDITTEXT        IDC_EDIT38,618,195,18,15,ES_CENTER | ES_LOWERCASE | 
+                    ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT39,596,195,18,15,ES_CENTER | ES_LOWERCASE | 
+                    ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME
+    RTEXT           "StrLen:",IDC_STATIC,596,182,32,8
+    RTEXT           "证件号码：",IDC_STATIC,203,183,54,8
+    EDITTEXT        IDC_EDIT40,640,195,18,15,ES_CENTER | ES_LOWERCASE | 
+                    ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT41,637,82,20,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    RTEXT           "年龄：",IDC_STATIC,600,83,31,8
+    CONTROL         "Progress1",IDC_PROGRESS3,"msctls_progress32",0x0,555,47,
+                    103,8
+    CONTROL         144,IDC_STATIC,"Static",SS_BITMAP,233,278,24,22,
+                    WS_EX_CLIENTEDGE
+    RTEXT           "状态：",IDC_STATIC,381,183,36,8
+    RTEXT           "是否住宿：",IDC_STATIC,482,183,51,8
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,416,196,74,13
+    RTEXT           "讲座日期：",IDC_STATIC,361,199,49,8
+    COMBOBOX        IDC_COMBO6,496,196,34,44,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO7,536,196,28,77,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "撤销",IDC_BUTTON27,405,286,45,15
+END
+
+IDD_DIALOG5 DIALOGEX 0, 0, 211, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "需要获得访问该信息权限"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,59,63,123,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,36,98,50,14
+    PUSHBUTTON      "取消",IDCANCEL,122,98,50,14
+    RTEXT           "对不起，此记录（",IDC_STATIC,13,23,71,8
+    EDITTEXT        IDC_EDIT2,88,23,27,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "）某些信息不公开，",IDC_STATIC,118,23,76,8
+    LTEXT           "欲获全部信息，须输入授权密码，否则按“取消”。",
+                    IDC_STATIC,20,37,177,8
+    CONTROL         134,IDC_STATIC,"Static",SS_BITMAP | SS_RIGHTJUST,24,55,
+                    24,21,WS_EX_CLIENTEDGE
+    GROUPBOX        "",IDC_STATIC,7,7,197,83,0,WS_EX_DLGMODALFRAME
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 146, 91
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "系统密码"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,20,37,80,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,14,70,50,14
+    PUSHBUTTON      "取消",IDCANCEL,80,70,50,14
+    GROUPBOX        "",IDC_STATIC,7,7,132,57,0,WS_EX_DLGMODALFRAME
+    LTEXT           "请输入系统密码：",IDC_STATIC,19,21,77,8
+    CONTROL         135,IDC_STATIC,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_RIGHTJUST,105,26,26,24,WS_EX_CLIENTEDGE
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 668, 447
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "高级查询"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT2,91,195,110,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDOK19,232,193,76,15
+    EDITTEXT        IDC_EDIT1,92,213,79,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDOK14,232,213,76,15
+    EDITTEXT        IDC_EDIT3,407,193,120,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDOK24,548,192,76,15
+    PUSHBUTTON      "主席团",IDOK2,24,34,76,15
+    PUSHBUTTON      "学术委员会",IDOK3,24,54,76,15
+    PUSHBUTTON      "代表",IDOK4,24,74,76,15
+    PUSHBUTTON      "特殊代表",IDOK23,24,116,76,15
+    PUSHBUTTON      "自费代表",IDOK5,129,74,76,15
+    PUSHBUTTON      "优惠自费代表",IDOK6,129,95,76,15
+    PUSHBUTTON      "非自费代表",IDOK7,129,116,76,15
+    PUSHBUTTON      "已注册主席团",IDOK11,240,34,76,15
+    PUSHBUTTON      "已注册学术委员会",IDOK12,240,54,76,15
+    PUSHBUTTON      "已注册代表",IDOK8,240,74,76,15
+    PUSHBUTTON      "已注册者",IDC_BUTTON1,327,34,76,15
+    PUSHBUTTON      "已注册自费代表",IDOK9,327,74,76,15
+    PUSHBUTTON      "已注册优惠者",IDOK10,327,95,76,15
+    PUSHBUTTON      "住宿者",IDOK13,327,117,76,15
+    PUSHBUTTON      "被赞助者",IDOK17,558,74,76,15
+    PUSHBUTTON      "赞助商",IDOK18,558,95,76,15
+    PUSHBUTTON      "讲者",IDOK15,23,323,76,15
+    PUSHBUTTON      "作者",IDOK16,23,344,76,15
+    PUSHBUTTON      "已发稿作者",IDOK20,23,384,76,15
+    PUSHBUTTON      "未发稿作者",IDOK21,23,406,76,15
+    PUSHBUTTON      "空邮编",IDOK22,585,308,76,15
+    PUSHBUTTON      "退出",IDCANCEL,586,426,75,14
+    GROUPBOX        "统计查询",IDC_STATIC,7,7,654,149,0,WS_EX_DLGMODALFRAME
+    GROUPBOX        "检索查询",IDC_STATIC,7,163,654,136,0,
+                    WS_EX_DLGMODALFRAME
+    GROUPBOX        "自费",IDC_STATIC,117,18,99,127,0,WS_EX_DLGMODALFRAME
+    GROUPBOX        "已注册",IDC_STATIC,225,18,313,127,0,WS_EX_DLGMODALFRAME
+    GROUPBOX        "赞助",IDC_STATIC,546,18,102,127,0,WS_EX_DLGMODALFRAME
+    GROUPBOX        "移动电话",IDC_STATIC,15,180,321,59,0,
+                    WS_EX_DLGMODALFRAME
+    GROUPBOX        "讲座与写作",IDC_STATIC,7,306,106,134,0,
+                    WS_EX_DLGMODALFRAME
+    GROUPBOX        "科室",IDC_STATIC,350,180,298,35,0,WS_EX_DLGMODALFRAME
+    RTEXT           "普通号码：",IDC_STATIC,27,197,53,8
+    RTEXT           "院内小号：",IDC_STATIC,27,214,53,8
+    RTEXT           "科室：",IDC_STATIC,360,195,38,8
+    PUSHBUTTON      "已回执代表",IDOK25,240,117,76,15
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,92,262,71,12
+    RTEXT           "讲座日期：",IDC_STATIC,27,264,52,8
+    GROUPBOX        "讲座",IDC_STATIC,15,246,321,41,0,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "查询",IDOK26,232,260,76,15
+    GROUPBOX        "厂家赞助",IDC_STATIC,350,221,298,67,0,
+                    WS_EX_DLGMODALFRAME
+    RTEXT           "赞助商：",IDC_STATIC,435,240,40,8
+    COMBOBOX        IDC_COMBO1,481,238,63,211,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "查询",IDOK27,558,237,76,15
+    PUSHBUTTON      "载入列表>>",IDC_BUTTON2,363,237,63,15
+    PUSHBUTTON      "重复赞助统计",IDOK28,559,117,76,15
+    PUSHBUTTON      "重复赞助查询",IDOK29,558,259,76,15
+    PUSHBUTTON      "已注册省外代表",IDOK30,439,34,76,15
+    PUSHBUTTON      "已注册市外代表",IDOK31,439,54,76,15
+    PUSHBUTTON      "已注册市内代表",IDOK32,439,74,76,15
+    PUSHBUTTON      "已注册住宿者",IDOK33,439,117,76,15
+    PUSHBUTTON      "已注册非赞助代表",IDOK34,439,95,76,15
+    PUSHBUTTON      "全免代表",IDOK35,558,35,76,15
+    GROUPBOX        "职称",IDC_STATIC,121,306,106,134,0,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "主任",IDOK36,135,323,76,15
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 181, 123
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "确认删除记录"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "否",IDCANCEL,106,102,50,14
+    PUSHBUTTON      "是",IDOK,23,102,50,14
+    CONTROL         133,IDC_STATIC,"Static",SS_BITMAP,18,20,145,37,
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "",IDC_STATIC,7,7,167,88,0,WS_EX_DLGMODALFRAME
+    CTEXT           "您确定要删除此记录吗？",IDC_STATIC,32,69,116,13
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 670, 377
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加新记录"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT3,154,138,90,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT20,249,138,29,12,ES_LOWERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,321,138,57,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,384,138,145,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,632,138,16,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,68,161,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,124,161,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,180,161,52,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,70,184,78,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,215,184,159,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,439,184,46,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT19,535,184,116,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,54,207,351,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,454,207,96,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,52,230,353,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT22,453,230,67,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT18,52,254,76,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT17,208,254,132,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT24,403,254,115,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT21,68,279,197,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "已注册",IDC_BUTTON9,310,274,60,17
+    EDITTEXT        IDC_EDIT29,53,302,493,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "保存",IDC_BUTTON5,119,340,60,17
+    PUSHBUTTON      "取消",IDC_BUTTON1,498,340,60,17
+    PUSHBUTTON      "住宿",IDC_BUTTON6,573,229,60,17
+    PUSHBUTTON      "关于",IDC_BUTTON7,305,340,60,17
+    EDITTEXT        IDC_EDIT1,64,138,37,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT23,591,254,57,12,ES_AUTOHSCROLL
+    RTEXT           "*注册号：",-1,15,140,43,8
+    RTEXT           "*单位：",-1,15,209,34,8
+    RTEXT           "*姓名：",-1,110,140,38,8
+    RTEXT           "性别：",-1,540,140,29,8
+    RTEXT           "*科室：",-1,413,209,36,8
+    RTEXT           "大会职务：",-1,14,163,50,8
+    RTEXT           "职称：",-1,284,140,32,8
+    RTEXT           "参会方式：",-1,13,186,49,8
+    RTEXT           "地址：",-1,13,231,34,8
+    RTEXT           "自费类型：",-1,382,186,51,8
+    RTEXT           "邮编：",-1,412,231,35,8
+    RTEXT           "赞助厂家：",-1,155,186,51,8
+    RTEXT           "联系电话：",-1,154,256,48,8
+    RTEXT           "*手机：",-1,16,256,31,8
+    RTEXT           "城市：",-1,493,186,38,8
+    RTEXT           "电子邮件：",-1,15,281,47,8
+    RTEXT           "是否住宿：",-1,528,256,60,8
+    GROUPBOX        "新记录",-1,7,108,656,221,0,WS_EX_DLGMODALFRAME
+    RTEXT           "传真：",-1,346,256,52,8
+    EDITTEXT        IDC_EDIT25,443,276,75,12,ES_AUTOHSCROLL
+    RTEXT           "是否注册：",-1,379,279,59,8
+    CONTROL         159,-1,"Static",SS_BITMAP,17,20,636,68,WS_EX_CLIENTEDGE
+    GROUPBOX        "",-1,7,7,656,93,0,WS_EX_DLGMODALFRAME
+    LTEXT           "*音序缩写",-1,246,126,46,8
+    CONTROL         "男",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    574,139,22,10
+    CONTROL         "女",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    603,139,24,10
+    RTEXT           "专业特长：",-1,241,163,58,8
+    EDITTEXT        IDC_EDIT28,304,161,347,12,ES_AUTOHSCROLL
+    RTEXT           "备注：",-1,16,303,32,8
+END
+
+IDD_DIALOG6 DIALOGEX 0, 0, 244, 204
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "进入",IDOK,192,183,45,14
+    CONTROL         156,IDC_STATIC,"Static",SS_BITMAP | SS_RIGHTJUST | 
+                    SS_REALSIZEIMAGE | WS_BORDER,7,7,231,161,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    CTEXT           "MotionSpecialist Vista 7.0",IDC_STATIC,64,171,103,8,
+                    SS_NOPREFIX
+    CTEXT           "中国医科大学附属盛京医院心内科",IDC_STATIC,49,186,136,8
+    CONTROL         153,IDC_STATIC,"Static",SS_BITMAP,7,171,29,26,
+                    WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MOTIONSPECIALISTVISTA_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 667
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 433
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 139
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 661
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 440
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 663
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 370
+    END
+
+    IDD_DIALOG6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MotionSpecialist Vista.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxdb.rc""          // Database resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MotionSpecialist Vista.ico"
+IDR_MOTIONTYPE          ICON    DISCARDABLE     "res\\MotionSpecialist VistaDoc.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\E_HONO.ICO"
+IDI_ICON2               ICON    DISCARDABLE     "res\\ARJ.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX1 DIALOGEX 0, 0, 319, 321
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MotionSpecialist"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_ICON2,IDC_STATIC,69,144,20,20
+    CTEXT           "MotionSpecialist Version 7.0",IDC_STATIC,90,132,111,8,
+                    SS_NOPREFIX
+    CTEXT           "Copyright (C) 2007",IDC_STATIC,104,145,85,8
+    DEFPUSHBUTTON   "OK",IDOK,136,200,50,14,WS_GROUP
+    CONTROL         136,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,15,
+                    69,289,38,WS_EX_CLIENTEDGE
+    CONTROL         137,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,15,
+                    23,289,39,WS_EX_CLIENTEDGE
+    GROUPBOX        "Copyrights",IDC_STATIC,7,7,305,109,0,
+                    WS_EX_DLGMODALFRAME
+    CONTROL         132,IDC_STATIC,"Static",SS_BITMAP,26,249,269,52,
+                    WS_EX_CLIENTEDGE
+    CTEXT           "Designer: Sun Yingxian",IDC_STATIC,99,158,98,8
+    CONTROL         139,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,219,
+                    132,83,44,WS_EX_CLIENTEDGE
+    GROUPBOX        "Software Information",IDC_STATIC,7,120,305,66,0,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "Contact Yang Chuan:",IDC_STATIC,206,191,90,8,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "E-mail: Dowrun@21cn.com",IDC_STATIC,206,205,99,8,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "MSN: Dowrun@hotmail.com",IDC_STATIC,206,219,98,8,0,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,7,233,305,81,0,WS_EX_DLGMODALFRAME
+    LTEXT           "Providing the best solution",IDC_STATIC,12,191,101,8,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "for MEDICAL affairs,",IDC_STATIC,43,205,80,8,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "rationally, digitally and professionally!",IDC_STATIC,
+                    13,219,141,8,0,WS_EX_TRANSPARENT
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP | SS_NOTIFY | 
+                    SS_RIGHTJUST,17,136,43,39,WS_EX_CLIENTEDGE
+    CTEXT           "Coder: Yang Chuan",IDC_STATIC,107,171,82,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MotionSpecialist Vista MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MotionSpecialist Vista\0"
+            VALUE "LegalCopyright", "Copyright (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MotionSpecialist Vista.EXE\0"
+            VALUE "ProductName", "MotionSpecialist Vista Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 314
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\ms7vista2.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\attention.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\bitmap15.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "res\\bitmap16.bmp"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\cmu2h.bmp"
+IDB_BITMAP6             BITMAP  DISCARDABLE     "res\\CMU.bmp"
+IDB_BITMAP7             BITMAP  DISCARDABLE     "res\\disk.bmp"
+IDB_BITMAP8             BITMAP  DISCARDABLE     "res\\bitmap24.bmp"
+IDB_BITMAP12            BITMAP  DISCARDABLE     "res\\new.bmp"
+IDB_BITMAP13            BITMAP  DISCARDABLE     "res\\search.bmp"
+IDB_BITMAP14            BITMAP  DISCARDABLE     "res\\button.bmp"
+IDB_BITMAP16            BITMAP  DISCARDABLE     "res\\password_02.bmp"
+IDB_BITMAP18            BITMAP  DISCARDABLE     "res\\ycli.bmp"
+IDB_BITMAP15            BITMAP  DISCARDABLE     "res\\Splash_MS.bmp"
+IDB_BITMAP9             BITMAP  DISCARDABLE     "res\\logo_add.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_FAILED_OPEN_DATABASE "Cannot open database."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "MotionSpecialist Vista\n\nMotion\n\n\nMotionSpecialistVista.Document\nMotion Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "MotionSpecialist Vista"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RECORD_FIRST         "Move to first record\nFirst Record"
+    ID_RECORD_LAST          "Move to final record\nLast Record"
+    ID_RECORD_NEXT          "Move to next record\nNext Record"
+    ID_RECORD_PREV          "Move to previous record\nPrevious Record"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MotionSpecialist Vista.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxdb.rc"          // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

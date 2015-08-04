@@ -1,0 +1,81 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MotionSpecialist Vista - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/MotionSpecialist Vista.res" /d "_DEBUG" "D:\Dowrun\Documents\My Source\MotionSpecialist Vista\MotionSpecialist Vista.rc"" 
+Creating temporary file "C:\Users\Dowrun\AppData\Local\Temp\RSPC42A.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/MotionSpecialist Vista.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Dowrun\Documents\My Source\MotionSpecialist Vista\AboutMotionSpecialistVista.cpp"
+"D:\Dowrun\Documents\My Source\MotionSpecialist Vista\AddNew.cpp"
+"D:\Dowrun\Documents\My Source\MotionSpecialist Vista\AddNewRecord.cpp"
+"D:\Dowrun\Documents\My Source\MotionSpecialist Vista\AdvancedSearch.cpp"
+"D:\Dowrun\Documents\My Source\MotionSpecialist Vista\Login.cpp"
+"D:\Dowrun\Documents\My Source\MotionSpecialist Vista\MainFrm.cpp"
+"D:\Dowrun\Documents\My Source\MotionSpecialist Vista\MotionSpecialist Vista.cpp"
+"D:\Dowrun\Documents\My Source\MotionSpecialist Vista\MotionSpecialist VistaDoc.cpp"
+"D:\Dowrun\Documents\My Source\MotionSpecialist Vista\MotionSpecialist VistaSet.cpp"
+"D:\Dowrun\Documents\My Source\MotionSpecialist Vista\MotionSpecialist VistaView.cpp"
+"D:\Dowrun\Documents\My Source\MotionSpecialist Vista\PasswordAquisition.cpp"
+"D:\Dowrun\Documents\My Source\MotionSpecialist Vista\ProtectedPasswordAquisition.cpp"
+"D:\Dowrun\Documents\My Source\MotionSpecialist Vista\SureToDelete.cpp"
+]
+Creating command line "cl.exe @C:\Users\Dowrun\AppData\Local\Temp\RSPC42A.tmp" 
+Creating temporary file "C:\Users\Dowrun\AppData\Local\Temp\RSPC42B.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/MotionSpecialist Vista.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Dowrun\Documents\My Source\MotionSpecialist Vista\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Dowrun\AppData\Local\Temp\RSPC42B.tmp" 
+Creating temporary file "C:\Users\Dowrun\AppData\Local\Temp\RSPC42C.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/MotionSpecialist Vista.pdb" /debug /machine:I386 /out:"Debug/MotionSpecialist Vista.exe" /pdbtype:sept 
+".\Debug\AboutMotionSpecialistVista.obj"
+".\Debug\AddNew.obj"
+".\Debug\AddNewRecord.obj"
+".\Debug\AdvancedSearch.obj"
+".\Debug\Login.obj"
+".\Debug\MainFrm.obj"
+".\Debug\MotionSpecialist Vista.obj"
+".\Debug\MotionSpecialist VistaDoc.obj"
+".\Debug\MotionSpecialist VistaSet.obj"
+".\Debug\MotionSpecialist VistaView.obj"
+".\Debug\PasswordAquisition.obj"
+".\Debug\ProtectedPasswordAquisition.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SureToDelete.obj"
+".\Debug\MotionSpecialist Vista.res"
+]
+Creating command line "link.exe @C:\Users\Dowrun\AppData\Local\Temp\RSPC42C.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AboutMotionSpecialistVista.cpp
+AddNew.cpp
+AddNewRecord.cpp
+AdvancedSearch.cpp
+Login.cpp
+MainFrm.cpp
+MotionSpecialist Vista.cpp
+MotionSpecialist VistaDoc.cpp
+MotionSpecialist VistaSet.cpp
+MotionSpecialist VistaView.cpp
+PasswordAquisition.cpp
+ProtectedPasswordAquisition.cpp
+SureToDelete.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+MotionSpecialist Vista.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
