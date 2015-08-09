@@ -1,0 +1,388 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Axis.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Axis.ico"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Axis"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,13,15,20,20
+    LTEXT           "Axis Version 1.5",IDC_STATIC,46,14,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005",IDC_STATIC,46,26,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_AXIS_DIALOG DIALOGEX 0, 0, 446, 337
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Axis - For Detecting QRS Axis -  Yang Chuan"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Positive",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,87,47,8,WS_EX_TRANSPARENT
+    CONTROL         "Negative",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,80,87,58,8,WS_EX_TRANSPARENT
+    CONTROL         "Positive",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,160,87,58,8,WS_EX_TRANSPARENT
+    CONTROL         "Negative",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,222,87,56,8,WS_EX_TRANSPARENT
+    CONTROL         "Positive",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,302,87,57,8,WS_EX_TRANSPARENT
+    CONTROL         "Negative",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,364,87,58,8,WS_EX_TRANSPARENT
+    CONTROL         "Positive",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,160,174,57,8,WS_EX_TRANSPARENT
+    CONTROL         "Negative",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,222,174,55,8,WS_EX_TRANSPARENT
+    CONTROL         "Positive",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,302,174,59,8,WS_EX_TRANSPARENT
+    CONTROL         "Negative",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,364,174,59,8,WS_EX_TRANSPARENT
+    CONTROL         "Positive",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,174,56,8,WS_EX_TRANSPARENT
+    CONTROL         "Negative",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,80,174,60,8,WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "&Calculate QRS Axis",IDC_BUTTON1,175,198,96,15
+    EDITTEXT        IDC_EDIT1,203,241,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,164,281,23,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,203,281,21,12,ES_AUTOHSCROLL
+    CTEXT           "~",IDC_STATIC,190,285,9,8,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "&About",IDC_BUTTON2,119,316,51,14
+    PUSHBUTTON      "E&xit",IDC_BUTTON3,279,316,51,14
+    RTEXT           "QRS Axis:",IDC_STATIC,147,243,52,8
+    LTEXT           "Confidence Interval:",IDC_STATIC,164,268,86,8,0,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "Lead I",IDC_STATIC,11,17,135,83,0,WS_EX_DLGMODALFRAME | 
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "QRS Axis",IDC_STATIC,11,224,250,82,0,
+                    WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+    LTEXT           "Explanation:",IDC_STATIC,274,275,57,8
+    EDITTEXT        IDC_EDIT4,273,286,151,12,ES_AUTOHSCROLL
+    GROUPBOX        "Diagnosis",IDC_STATIC,265,224,167,82,0,
+                    WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+    GROUPBOX        "Lead II",IDC_STATIC,154,17,135,83,0,WS_EX_DLGMODALFRAME | 
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "Lead aVR",IDC_STATIC,11,104,135,83,0,
+                    WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+    GROUPBOX        "Lead aVL",IDC_STATIC,154,104,135,83,0,
+                    WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+    GROUPBOX        "Lead aVF",IDC_STATIC,296,104,135,83,0,
+                    WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+    GROUPBOX        "Lead III",IDC_STATIC,296,17,135,83,0,
+                    WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+    GROUPBOX        "Raw Data: The Mean Direction of QRS Complex",IDC_STATIC,
+                    6,7,433,187,0,WS_EX_TRANSPARENT
+    GROUPBOX        "Results",IDC_STATIC,7,214,431,98,0,WS_EX_TRANSPARENT
+    LTEXT           "Normal",IDC_STATIC,111,239,42,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Slight",IDC_STATIC,111,255,42,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Significant",IDC_STATIC,111,266,47,8,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Moderate",IDC_STATIC,111,277,42,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Extreme",IDC_STATIC,111,288,42,8,0,WS_EX_TRANSPARENT
+    LTEXT           "degree",IDC_STATIC,228,243,30,8
+    LTEXT           "degree",IDC_STATIC,228,283,30,8,0,WS_EX_TRANSPARENT
+    CONTROL         154,IDC_STATIC,"Static",SS_BITMAP,18,32,60,53,
+                    WS_EX_CLIENTEDGE
+    CONTROL         155,IDC_STATIC,"Static",SS_BITMAP,80,32,60,53,
+                    WS_EX_CLIENTEDGE
+    CONTROL         156,IDC_STATIC,"Static",SS_BITMAP,160,32,60,53,
+                    WS_EX_CLIENTEDGE
+    CONTROL         157,IDC_STATIC,"Static",SS_BITMAP,222,32,60,53,
+                    WS_EX_CLIENTEDGE
+    CONTROL         158,IDC_STATIC,"Static",SS_BITMAP,302,32,60,53,
+                    WS_EX_CLIENTEDGE
+    CONTROL         159,IDC_STATIC,"Static",SS_BITMAP,364,32,60,53,
+                    WS_EX_CLIENTEDGE
+    CONTROL         160,IDC_STATIC,"Static",SS_BITMAP,18,119,60,53,
+                    WS_EX_CLIENTEDGE
+    CONTROL         161,IDC_STATIC,"Static",SS_BITMAP,80,119,60,53,
+                    WS_EX_CLIENTEDGE
+    CONTROL         162,IDC_STATIC,"Static",SS_BITMAP,160,119,60,53,
+                    WS_EX_CLIENTEDGE
+    CONTROL         163,IDC_STATIC,"Static",SS_BITMAP,222,119,60,53,
+                    WS_EX_CLIENTEDGE
+    CONTROL         164,IDC_STATIC,"Static",SS_BITMAP,302,119,60,53,
+                    WS_EX_CLIENTEDGE
+    CONTROL         165,IDC_STATIC,"Static",SS_BITMAP,364,119,60,53,
+                    WS_EX_CLIENTEDGE
+    CONTROL         146,IDC_STATIC,"Static",SS_BITMAP,19,239,63,58,
+                    WS_EX_CLIENTEDGE
+    CONTROL         147,IDC_STATIC,"Static",SS_BITMAP,85,239,23,9,
+                    WS_EX_CLIENTEDGE
+    CONTROL         148,IDC_STATIC,"Static",SS_BITMAP,85,255,23,9,
+                    WS_EX_CLIENTEDGE
+    CONTROL         151,IDC_STATIC,"Static",SS_BITMAP,85,266,23,9,
+                    WS_EX_CLIENTEDGE
+    CONTROL         149,IDC_STATIC,"Static",SS_BITMAP,85,277,23,9,
+                    WS_EX_CLIENTEDGE
+    CONTROL         150,IDC_STATIC,"Static",SS_BITMAP,85,288,23,9,
+                    WS_EX_CLIENTEDGE
+    CONTROL         152,IDC_STATIC,"Static",SS_BITMAP,340,237,83,44,
+                    WS_EX_CLIENTEDGE
+    CONTROL         153,IDC_STATIC,"Static",SS_BITMAP,274,237,61,35,
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_ABOUTBOX1 DIALOGEX 0, 0, 320, 228
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Axis"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,92,138,20,20
+    CTEXT           "Axis Version 1.5",IDC_STATIC,116,136,72,8,SS_NOPREFIX
+    CTEXT           "Copyright (C) 2005",IDC_STATIC,117,148,72,8
+    DEFPUSHBUTTON   "OK",IDOK,129,202,50,14,WS_GROUP
+    CONTROL         170,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,15,
+                    68,289,38,WS_EX_CLIENTEDGE
+    CONTROL         168,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,15,
+                    23,289,39,WS_EX_CLIENTEDGE
+    GROUPBOX        "Copyrights",IDC_STATIC,7,7,306,109,0,
+                    WS_EX_DLGMODALFRAME
+    CONTROL         167,IDC_STATIC,"Static",SS_BITMAP,17,136,61,35,
+                    WS_EX_CLIENTEDGE
+    CTEXT           "Designer and Coder: Yang Chuan",IDC_STATIC,86,167,128,8
+    CONTROL         166,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,219,
+                    132,83,44,WS_EX_CLIENTEDGE
+    GROUPBOX        "Software Information",IDC_STATIC,7,120,306,66,0,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "Contact Yang Chuan:",IDC_STATIC,206,190,90,8,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "E-mail: Dowrun@21cn.com",IDC_STATIC,206,200,99,8,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "QQ: 2060350",IDC_STATIC,207,210,77,8,0,
+                    WS_EX_TRANSPARENT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,5,0,1
+ PRODUCTVERSION 1,5,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "For Detecting QRS Axis - Yang Chuan\0"
+            VALUE "CompanyName", "China Medical University\0"
+            VALUE "FileDescription", "Yang Chuan Logic\0"
+            VALUE "FileVersion", "1, 5, 0, 1\0"
+            VALUE "InternalName", "Axis\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005\0"
+            VALUE "LegalTrademarks", "Yang Chuan Logic Innovation\0"
+            VALUE "OriginalFilename", "Axis.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Axis Application\0"
+            VALUE "ProductVersion", "1, 5, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_AXIS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 439
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 330
+    END
+
+    IDD_ABOUTBOX1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP13            BITMAP  DISCARDABLE     "res\\vectors.bmp"
+IDB_BITMAP14            BITMAP  DISCARDABLE     "res\\blue.bmp"
+IDB_BITMAP15            BITMAP  DISCARDABLE     "res\\green.bmp"
+IDB_BITMAP16            BITMAP  DISCARDABLE     "res\\orange.bmp"
+IDB_BITMAP17            BITMAP  DISCARDABLE     "res\\red.bmp"
+IDB_BITMAP18            BITMAP  DISCARDABLE     "res\\yellow.bmp"
+IDB_BITMAP19            BITMAP  DISCARDABLE     "res\\ycli.bmp"
+IDB_BITMAP20            BITMAP  DISCARDABLE     "res\\axis.bmp"
+IDB_BITMAP21            BITMAP  DISCARDABLE     "res\\lead1_p.bmp"
+IDB_BITMAP22            BITMAP  DISCARDABLE     "res\\lead1_n.bmp"
+IDB_BITMAP23            BITMAP  DISCARDABLE     "res\\lead2_p.bmp"
+IDB_BITMAP24            BITMAP  DISCARDABLE     "res\\lead2_n.bmp"
+IDB_BITMAP25            BITMAP  DISCARDABLE     "res\\lead3_p.bmp"
+IDB_BITMAP26            BITMAP  DISCARDABLE     "res\\lead3_n.bmp"
+IDB_BITMAP27            BITMAP  DISCARDABLE     "res\\avr_p.bmp"
+IDB_BITMAP28            BITMAP  DISCARDABLE     "res\\avr_n.bmp"
+IDB_BITMAP29            BITMAP  DISCARDABLE     "res\\avl_p.bmp"
+IDB_BITMAP30            BITMAP  DISCARDABLE     "res\\avl_n.bmp"
+IDB_BITMAP31            BITMAP  DISCARDABLE     "res\\avf_p.bmp"
+IDB_BITMAP32            BITMAP  DISCARDABLE     "res\\avf_n.bmp"
+IDB_BITMAP33            BITMAP  DISCARDABLE     "res\\bitmap33.bmp"
+IDB_BITMAP34            BITMAP  DISCARDABLE     "res\\bitmap34.bmp"
+IDB_BITMAP35            BITMAP  DISCARDABLE     "res\\cmu2h.bmp"
+IDB_BITMAP36            BITMAP  DISCARDABLE     "res\\CMU.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Axis..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Axis.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
