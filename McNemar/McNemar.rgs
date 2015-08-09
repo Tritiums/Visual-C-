@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{A5987B19-6AE8-4688-B399-B0939D525D72} = s 'McNemar'
+		'McNemar.EXE'
+		{
+			val AppID = s {A5987B19-6AE8-4688-B399-B0939D525D72}
+		}
+	}
+}

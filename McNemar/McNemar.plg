@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: McNemar - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Dowrun\AppData\Local\Temp\RSP6DFD.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/McNemar.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Dowrun\Documents\My Source\McNemar\McNemarDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\Dowrun\AppData\Local\Temp\RSP6DFD.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/McNemar.pdb" /debug /machine:I386 /out:"Debug/McNemar.exe" /pdbtype:sept  ".\Debug\McNemar.obj" ".\Debug\McNemarDlg.obj" ".\Debug\StdAfx.obj" ".\Debug\McNemar.res" "
+<h3>Output Window</h3>
+Compiling...
+McNemarDlg.cpp
+D:\Dowrun\Documents\My Source\McNemar\McNemarDlg.cpp(150) : warning C4101: 'm_symbo1' : unreferenced local variable
+D:\Dowrun\Documents\My Source\McNemar\McNemarDlg.cpp(150) : warning C4101: 'm_sybo2' : unreferenced local variable
+D:\Dowrun\Documents\My Source\McNemar\McNemarDlg.cpp(218) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+D:\Dowrun\Documents\My Source\McNemar\McNemarDlg.cpp(218) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+D:\Dowrun\Documents\My Source\McNemar\McNemarDlg.cpp(226) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+D:\Dowrun\Documents\My Source\McNemar\McNemarDlg.cpp(227) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+Linking...
+
+
+
+<h3>Results</h3>
+McNemar.exe - 0 error(s), 6 warning(s)
+</pre>
+</body>
+</html>
