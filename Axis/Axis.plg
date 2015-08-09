@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Axis - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/Axis.res" /d "_DEBUG" "D:\Dowrun\Documents\My Source\Axis\Axis.rc"" 
+Creating temporary file "C:\Users\Dowrun\AppData\Local\Temp\RSP50A2.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/Axis.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Dowrun\Documents\My Source\Axis\Axis.cpp"
+"D:\Dowrun\Documents\My Source\Axis\AxisDlg.cpp"
+"D:\Dowrun\Documents\My Source\Axis\Copyright.cpp"
+]
+Creating command line "cl.exe @C:\Users\Dowrun\AppData\Local\Temp\RSP50A2.tmp" 
+Creating temporary file "C:\Users\Dowrun\AppData\Local\Temp\RSP50A3.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/Axis.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Dowrun\Documents\My Source\Axis\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Dowrun\AppData\Local\Temp\RSP50A3.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Axis.pdb" /debug /machine:I386 /out:"Debug/Axis.exe" /pdbtype:sept  ".\Debug\Axis.obj" ".\Debug\AxisDlg.obj" ".\Debug\Copyright.obj" ".\Debug\StdAfx.obj" ".\Debug\Axis.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Axis.cpp
+AxisDlg.cpp
+Copyright.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Axis.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
