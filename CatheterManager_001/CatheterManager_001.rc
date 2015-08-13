@@ -1,0 +1,580 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CATHETERMANAGER_001_FORM DIALOGEX 0, 0, 680, 441
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER3,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,69,65,62,12
+    EDITTEXT        IDC_EDIT14,137,65,43,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,244,65,106,56,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL
+    COMBOBOX        IDC_COMBO2,413,65,133,56,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL
+    COMBOBOX        IDC_COMBO3,598,65,62,56,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL
+    EDITTEXT        IDC_EDIT3,52,82,45,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,198,82,45,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,330,82,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,470,82,45,12,ES_RIGHT | ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO5,61,99,200,328,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL
+    COMBOBOX        IDC_COMBO4,328,99,200,296,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL
+    EDITTEXT        IDC_EDIT12,52,117,608,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,68,144,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,107,144,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1,186,144,162,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,400,144,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,487,144,82,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,616,144,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,52,161,603,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "保存",IDC_BUTTON3,602,202,60,16
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,286,548,148
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,39,253,72,12
+    PUSHBUTTON      "查询",IDC_BUTTON1,230,252,60,16
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,141,253,76,12
+    PUSHBUTTON      "浏览",IDC_BUTTON2,585,374,60,16
+    CTEXT           "至",IDC_STATIC,116,255,20,9
+    RTEXT           "从",IDC_STATIC,14,255,20,9
+    PUSHBUTTON      "清空",IDC_BUTTON4,585,343,60,16
+    EDITTEXT        IDC_EDIT4,296,21,40,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_BUTTON5,353,19,60,16
+    RTEXT           "送货日期：",IDC_STATIC,16,67,47,8
+    RTEXT           "产品缩写：",IDC_STATIC,187,67,52,8
+    RTEXT           "产品名称：",IDC_STATIC,356,67,52,8
+    RTEXT           "型号：",IDC_STATIC,554,66,39,8
+    RTEXT           "生产商：",IDC_STATIC,16,101,40,8
+    RTEXT           "配送商：",IDC_STATIC,271,101,52,8
+    RTEXT           "单价：",IDC_STATIC,16,84,31,8
+    LTEXT           "元",IDC_STATIC,102,84,28,8
+    RTEXT           "数量：",IDC_STATIC,291,84,34,8
+    RTEXT           "进货价格：",IDC_STATIC,137,84,56,8
+    LTEXT           "件",IDC_STATIC,360,84,34,8
+    LTEXT           "元",IDC_STATIC,248,84,28,8
+    LTEXT           "元",IDC_STATIC,520,84,28,8
+    RTEXT           "金额：",IDC_STATIC,409,84,56,8
+    RTEXT           "患者姓名：",IDC_STATIC,14,146,49,8
+    RTEXT           "诊断：",IDC_STATIC,139,146,41,8
+    GROUPBOX        "产品信息",IDC_STATIC,7,49,666,136,0,WS_EX_DLGMODALFRAME
+    RTEXT           "术者：",IDC_STATIC,354,146,41,8
+    RTEXT           "助手：",IDC_STATIC,441,146,41,8
+    RTEXT           "技师：",IDC_STATIC,575,146,36,8
+    RTEXT           "备注：",IDC_STATIC,17,119,30,8
+    RTEXT           "备注：",IDC_STATIC,17,162,30,8
+    GROUPBOX        "",IDC_STATIC,589,189,84,89,0,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "添加",IDC_BUTTON6,602,226,60,16
+    PUSHBUTTON      "删除",IDC_BUTTON7,602,250,60,16
+    GROUPBOX        "",IDC_STATIC,316,197,110,79
+    GROUPBOX        "",IDC_STATIC,242,6,191,39,0,WS_EX_DLGMODALFRAME
+    RTEXT           "序号：",IDC_STATIC,250,23,41,8
+    CONTROL         133,IDC_STATIC,"Static",SS_BITMAP,8,8,224,34,
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "按日期查询",IDC_STATIC,7,195,299,83,0,
+                    WS_EX_DLGMODALFRAME
+    COMBOBOX        IDC_COMBO6,99,211,191,56,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL
+    GROUPBOX        "按患者查询",IDC_STATIC,434,195,146,83,0,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT15,453,240,38,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO7,452,217,115,56,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL
+    DEFPUSHBUTTON   "查询",IDC_BUTTON8,505,237,60,16
+    EDITTEXT        IDC_EDIT16,573,404,25,12,ES_AUTOHSCROLL
+    RTEXT           "共",IDC_STATIC,324,216,16,8
+    EDITTEXT        IDC_EDIT17,345,215,35,12,ES_RIGHT | ES_AUTOHSCROLL
+    RTEXT           "在",IDC_STATIC,323,244,16,8
+    EDITTEXT        IDC_EDIT18,345,243,35,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "条记录中",IDC_STATIC,384,244,34,8
+    COMBOBOX        IDC_COMBO8,99,230,191,194,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL
+    CONTROL         "按产品名查询：",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    BS_RIGHT | WS_TABSTOP,21,214,73,8
+    CONTROL         "按生产商查询：",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    BS_RIGHT | WS_TABSTOP,21,233,73,8
+    LTEXT           "件",IDC_STATIC,385,216,27,8
+    PUSHBUTTON      "Button9",IDC_BUTTON9,503,22,55,14
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 537, 225
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "载入列表",IDCANCEL2,251,17,89,18
+    COMBOBOX        IDC_COMBO1,69,82,106,56,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL
+    PUSHBUTTON      ">>",IDCANCEL3,189,81,23,14
+    EDITTEXT        IDC_EDIT2,53,103,25,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,77,151,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,116,151,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1,195,151,162,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,61,170,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,149,170,82,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,277,170,35,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "保存",IDOK,143,203,50,14
+    PUSHBUTTON      "取消",IDCANCEL,325,203,50,14
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER3,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,69,64,62,12
+    RTEXT           "使用日期：",IDC_STATIC,16,66,47,8
+    RTEXT           "产品缩写：",IDC_STATIC,15,84,49,8
+    COMBOBOX        IDC_COMBO2,271,82,133,56,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL
+    RTEXT           "产品名称：",IDC_STATIC,214,84,52,8
+    RTEXT           "型号：",IDC_STATIC,409,84,39,8
+    COMBOBOX        IDC_COMBO3,454,82,62,56,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL
+    RTEXT           "数量：",IDC_STATIC,17,105,31,8
+    LTEXT           "单位",IDC_STATIC,83,105,34,8
+    RTEXT           "患者姓名：",IDC_STATIC,23,153,49,8
+    RTEXT           "诊断：",IDC_STATIC,148,153,41,8
+    GROUPBOX        "产品信息",IDC_STATIC,7,48,523,77,0,WS_EX_DLGMODALFRAME
+    GROUPBOX        "患者及手术信息",IDC_STATIC,7,133,523,61,0,
+                    WS_EX_DLGMODALFRAME
+    RTEXT           "术者：",IDC_STATIC,15,172,41,8
+    RTEXT           "助手：",IDC_STATIC,103,172,41,8
+    RTEXT           "技师：",IDC_STATIC,237,172,36,8
+    EDITTEXT        IDC_EDIT14,185,64,43,12,ES_AUTOHSCROLL
+    RTEXT           "序号：",IDC_STATIC,137,66,44,8
+    CONTROL         133,IDC_STATIC,"Static",SS_BITMAP,8,8,227,36,
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 181, 123
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "确认删除记录"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "否",IDCANCEL,106,102,50,14
+    PUSHBUTTON      "是",IDOK,23,102,50,14
+    CONTROL         146,IDC_STATIC,"Static",SS_BITMAP,18,20,145,37,
+                    WS_EX_CLIENTEDGE
+    GROUPBOX        "",IDC_STATIC,7,7,167,88,0,WS_EX_DLGMODALFRAME
+    CTEXT           "您确定要删除此记录吗？",IDC_STATIC,32,69,116,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CATHETERMANAGER_001_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 673
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 434
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 530
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CatheterManager_001.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxdb.rc""          // Database resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CatheterManager_001.ico"
+IDR_CATHETTYPE          ICON    DISCARDABLE     "res\\CatheterManager_001Doc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&Record"
+    BEGIN
+        MENUITEM "&First Record",               ID_RECORD_FIRST
+        MENUITEM "&Previous Record",            ID_RECORD_PREV
+        MENUITEM "&Next Record",                ID_RECORD_NEXT
+        MENUITEM "&Last Record",                ID_RECORD_LAST
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About CatheterManager_001...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About CatheterManager_001"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CatheterManager_001 Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CatheterManager_001 MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CatheterManager_001\0"
+            VALUE "LegalCopyright", "Copyright (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CatheterManager_001.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "CatheterManager_001 Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\attention.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\CM_small.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_FAILED_OPEN_DATABASE "Cannot open database."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "CatheterManager_001\n\nCathet\n\n\nCatheterManager001.Document\nCathet Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "CatheterManager_001"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RECORD_FIRST         "Move to first record\nFirst Record"
+    ID_RECORD_LAST          "Move to final record\nLast Record"
+    ID_RECORD_NEXT          "Move to next record\nNext Record"
+    ID_RECORD_PREV          "Move to previous record\nPrevious Record"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\CatheterManager_001.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxdb.rc"          // Database resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
