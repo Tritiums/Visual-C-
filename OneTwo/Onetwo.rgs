@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{E6AEDBF6-4B7B-4F7E-91B8-9FBB9F140176} = s 'Onetwo'
+		'Onetwo.EXE'
+		{
+			val AppID = s {E6AEDBF6-4B7B-4F7E-91B8-9FBB9F140176}
+		}
+	}
+}
